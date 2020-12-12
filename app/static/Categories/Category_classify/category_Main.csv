@@ -1,0 +1,28 @@
+ danh muc  , hang san xuat  , khoang gia ,  socket ,  form factor ,  chipset ,  so khe cam ram 
+mainboard-intel,asrock,duoi-2trieu,intel-lga-1151,mini-itx-1-1,intel-h110-lga-1151,2-khe-1
+mainboard-amd,asus,2trieu-3trieu,intel-lga-1151-v2,m-atx-1,intel-h310-lga-1151-v2,4-khe-1
+- No Information,gigabyte,3trieu-5trieu,intel-lga-1200,u-atx,intel-h410-lga-1200,8-khe-1
+- No Information,intel,5trieu-7trieu,intel-dual-lga-2011,atx-1-1,intel-b360-lga-1151-v2,12-khe-1
+- No Information,msi,7trieu-9trieu,intel-dual-lga-2011-v3,e-atx-1-1,intel-b365-lga-1151-v2,16-khe-1
+- No Information,supermicro,9trieu-12trieu,intel-lga-2066,eeb,intel-b460-lga-1200,- No Information
+- No Information,- No Information,12trieu-15trieu,intel-lga-3647,ssi-eeb,intel-z370-lga-1151-v2,- No Information
+- No Information,- No Information,tren-15trieu,intel-dual-lga-3647,ceb-1,intel-z390-lga-1151-v2,- No Information
+- No Information,- No Information,- No Information,amd-am4-1-1,- No Information,intel-z490-lga-1200,- No Information
+- No Information,- No Information,- No Information,amd-tr4-1,- No Information,intel-c246-lga-1151-v2,- No Information
+- No Information,- No Information,- No Information,amd-trx4,- No Information,intel-c232-lga-1151,- No Information
+- No Information,- No Information,- No Information,amd-strx4,- No Information,intel-c242-lga-1151,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-x99-lga-2011-v3,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-x299-lga-2066,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-c422-lga-2066,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-c602-dual-lga-2011,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-c612-dual-lga-2011-v3,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-c621-dual-lga-3647,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,intel-c622-lga-3647,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-a320-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-b350-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-b550-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-b450-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-x370-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-x570-am4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-x399-tr4,- No Information
+- No Information,- No Information,- No Information,- No Information,- No Information,amd-trx40-trx4,- No Information

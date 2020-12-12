@@ -1,0 +1,29 @@
+ danh muc  , hang san xuat  , khoang gia ,  nhu cau su dung ,  gpu ,  kieu bo nho ,  kich thuoc bo nho ,  giao dien bo nho 
+vga-nvidia,amd,duoi-2trieu,gaming-1,nvidia-gt-710,gddr3,1-gb,64-bit
+vga-amd,asrock,2trieu-3trieu,do-hoa-kien-truc,nvidia-gt-1030,gddr5,2-gb,128-bit
+- No Information,asus,3trieu-5trieu,pho-thong-van-phong,nvidia-gtx-1650,gddr6,4-gb,160-bit
+- No Information,evga,5trieu-7trieu,- No Information,nvidia-gtx-1650-super,hbm2,5-gb,192-bit
+- No Information,galax,7trieu-9trieu,- No Information,nvidia-gtx-1660,gddr6x,6-gb,256-bit
+- No Information,gigabyte,9trieu-12trieu,- No Information,nvidia-gtx-1660-super,- No Information,8-gb,352-bit
+- No Information,hp,12trieu-15trieu,- No Information,nvidia-gtx-1660-ti,- No Information,11-gb,384-bit
+- No Information,inno3d,15trieu-18trieu,- No Information,nvidia-rtx-2060,- No Information,12-gb,2048-bit
+- No Information,leadtek,18trieu-24trieu,- No Information,nvidia-rtx-2060-super,- No Information,16-gb-1,3072-bit
+- No Information,msi,tren-24trieu,- No Information,nvidia-rtx-2070,- No Information,24-gb,4096-bit
+- No Information,palit,- No Information,- No Information,nvidia-rtx-2070-super,- No Information,32-gb-1,320-bit
+- No Information,pny,- No Information,- No Information,nvidia-rtx-2080,- No Information,48-gb,- No Information
+- No Information,quadro,- No Information,- No Information,nvidia-rtx-2080-super,- No Information,10-gb,- No Information
+- No Information,sapphire,- No Information,- No Information,nvidia-rtx-2080-ti,- No Information,20gb,- No Information
+- No Information,zotac,- No Information,- No Information,nvidia-quadro,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-570,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-580,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-5500-xt,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-5600-xt,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-5700,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-5700-xt,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-vega-64,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,nvidia-rtx-3070,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,nvidia-rtx-3080,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,nvidia-rtx-3090,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-6800-xt,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-rx-6800,- No Information,- No Information,- No Information
+- No Information,- No Information,- No Information,- No Information,nvidia-rtx-3060ti,- No Information,- No Information,- No Information

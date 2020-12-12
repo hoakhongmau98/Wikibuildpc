@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ config.APP_NAME }}</title>
+    <!-- meta -->
+    <meta name="description" content="Build, PC, wiki, how to build PC, VGA, CPU, Main, MainBoard">
+    <meta name="author" content="HuyenChi">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% block meta %}{% endblock %}
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet" media="screen">
+
+    {% block links %}{% endblock %}
+</head>
+
+<body>
+<!-- Header -->
+<header style="height: 60px">
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light justify-content-between bg-dark"
+             style="height: 60px">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse flex-right collapse" id="navbarNavDropdown">
+                <!-- Main Navigation -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="build_object">Build Your PC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mainboard">MainBoard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ram">RAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gpu">GPU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="margin-right: 0px; margin-left: 0px">
+                            CPU
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="intel">INTEL</a>
+                            <a class="dropdown-item" href="amd">AMD</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Storage
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="ssd">SSD</a>
+                            <a class="dropdown-item" href="hdd">HDD</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Other Pages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="gear">Gear</a>
+                            <a class="dropdown-item" href="case">Case</a>
+                            <a class="dropdown-item" href="psu">Psu</a>
+                            <a class="dropdown-item" href="idcooling">Cooling</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="/login">Login</a>
+                            <a class="dropdown-item" href="/logout">Register</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Flash Messages -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+<div class="alert alert-{{ category }} alert-dismisible">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+    </button>
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<!-- Main Content -->
+{% block content %}{% endblock %}
+<!-- Footer-->
+<footer>
+    <div class="container-fluid bg-light py-5">
+        <div class="row py-4">
+            <div class="col-lg-6 col-md-4 mb-4 mb-lg-0">
+                <h6 id='about' class="text-uppercase font-weight-bold mb-4">About</h6>
+                <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt.</p>
+            </div>
+            <div class="col-lg-2 col-md-3 mb-4 mb-lg-0">
+                <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="{{ url_for('auth.login') }}" class="text-muted">Login</a></li>
+                    <li class="mb-2"><a href="{{ url_for('auth.register') }}" class="text-muted">Register</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 mb-4 mb-lg-0">
+                <h6 class="text-uppercase font-weight-bold mb-4">Social Links</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="list-item"><a href="https://facebook.com" target="_blank" title="facebook"><span
+                            class="fa fa-facebook">Facebook</span></a>
+                    </li>
+                    <li class="list-item"><a href="https://twitter.com" target="_blank" title="twitter"><span
+                            class="fa fa-twitter"></span>Twitter</a>
+                    </li>
+                    <li class="list-item"><a href="https://instagram.com" target="_blank" title="instagram"><span
+                            class="fa fa-instagram"></span>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyrights -->
+        <div class="text-center">
+            <p class="text-muted mb-0 py-2">&copy;2020 {{ config.APP_NAME }} | All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/base.js') }}" type="text/javascript"></script>
+{% block scripts %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% block links %}
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" media="screen">
+{% endblock %}
+{% block content %}
+    <div class="main-content">
+    <section class="slideshow" style="max-height: 700px">
+        <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active ">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 1</div>
+                            <div class="text">
+                                <p>Slide description 1</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner1.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 2</div>
+                            <div class="text">
+                                <p>Slide description 2</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner2.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 3</div>
+                            <div class="text">
+                                <p>Slide description 3</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner3.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 4</div>
+                            <div class="text">
+                                <p>Slide description 4</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner4.jpg')}}" alt="none">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination d-flex justify-content-center">
+                <div class="item is-active">
+                    <span class="icon">1</span>
+                </div>
+                <div class="item">
+                    <span class="icon">2</span>
+                </div>
+                <div class="item">
+                    <span class="icon">3</span>
+                </div>
+                <div class="item">
+                    <span class="icon">4</span>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrow prev">
+                            <span class="svg svg-arrow-left">
+                                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                     height="26px"
+                                     viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                    <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,
+                                                0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,
+                                                11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                                <span class="alt sr-only"></span>
+                            </span>
+                </div>
+                <div class="arrow next">
+                            <span class="svg svg-arrow-right">
+                                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                     height="26px"
+                                     viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                    <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,
+                                                1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,
+                                                1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                                <span class="alt sr-only"></span>
+                            </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+<div style="height: 200px; background-color: pink">
+    <p>web present information</p>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1 " style="background-color: lightblue; min-width: 250px">
+            <div class="sidebar float-left">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <br>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <br>
+                <button type="button" class="btn btn-success">Success</button>
+                <br>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <br>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <br>
+                <button type="button" class="btn btn-info">Info</button>
+                <br>
+                <button type="button" class="btn btn-light">Light</button>
+                <br>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <br>
+            </div>
+        </div>
+        <div class="col service-area" style="display: flex; padding-top: 30px">
+            <div class="container-fluid">
+                {% for index_object in index_data %}
+                <div class="row">
+                        <div class="col-4" style="border-right: #222222; min-height: 200px">
+                            <h3>{{ index_object['Name'] }}</h3>
+                            <p>{{ index_object['Content'] }}</p>
+                            <a  class="btn btn-dark" href={{ index_object['Link_direct'] }} type="button" style="color: black" >Xem thêm</a>
+                        </div>
+                        <div class="col">
+                            <div class="row blog">
+                                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][0]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][1]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][2]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][3]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--.row-->
+                                        </div>
+                                        <!--.item-->
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][4]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][5]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][6]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a>
+                                                        <img src="{{ url_for('static', filename='Categories/img' + index_object['Link_direct'] + '/' + index_object['Img'][7]) }}" alt="Image"
+                                                             style="max-width:100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--.row-->
+                                        </div>
+                                        <!--.item-->
+                                    </div>
+                                    <!--.carousel-inner-->
+                                </div>
+                                <!--.Carousel-->
+                            </div>
+                        </div>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-1 " style="background-color: lightgreen;min-width: 200px">
+            <div class="sidebar position-sticky float-left">
+                <button type="button" class="btn btn-primary" style="max-width: 150px">Facebook</button>
+                <br>
+                <button type="button" class="btn btn-secondary" style="max-width: 150px">Like</button>
+                <br>
+                <button type="button" class="btn btn-success" style="max-width: 150px">Twitter</button>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- javascript custom -->
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/slide-index.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+{% endblock %}

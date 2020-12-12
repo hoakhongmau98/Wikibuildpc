@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% block links %}
+<link href="{{ url_for('static', filename='css/build.css') }}" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" media="screen">
+{% endblock %}
+{% block content %}
+<div class="main-content">
+    <section class="slideshow" style="max-height: 350px">
+        <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active ">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 1</div>
+                            <div class="text">
+                                <p>Slide description 1</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename= 'webview/banner1.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 2</div>
+                            <div class="text">
+                                <p>Slide description 2</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner2.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 3</div>
+                            <div class="text">
+                                <p>Slide description 3</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner3.jpg')}}" alt="none">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Slide title 4</div>
+                            <div class="text">
+                                <p>Slide description 4</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='webview/banner4.jpg')}}" alt="none">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination d-flex justify-content-center">
+                <div class="item is-active">
+                    <span class="icon">1</span>
+                </div>
+                <div class="item">
+                    <span class="icon">2</span>
+                </div>
+                <div class="item">
+                    <span class="icon">3</span>
+                </div>
+                <div class="item">
+                    <span class="icon">4</span>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrow prev">
+                            <span class="svg svg-arrow-left">
+                                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                     height="26px"
+                                     viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                    <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,
+                                                0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,
+                                                11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                                <span class="alt sr-only"></span>
+                            </span>
+                </div>
+                <div class="arrow next">
+                            <span class="svg svg-arrow-right">
+                                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px"
+                                     height="26px"
+                                     viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                                    <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,
+                                                1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,
+                                                1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                                <span class="alt sr-only"></span>
+                            </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-1 " style="background-color: lightblue; min-width: 250px">
+            <div class="sidebar-right float-left">
+                <div class="categories" value="Cpu">
+
+                </div>
+            </div>
+        </div>
+        <div class="col main-wrapper" style=" display: flex; padding: 0">
+            <section class="service-area" style="width: 100%">
+                <div class="container-fluid" style="margin-top: 15px; min-height: 65px; margin-bottom: 25px">
+                    <button type="button" value="Case" class="btn btn-primary call_object">Case</button>
+                    <button type="button" value="Cpu" class="btn btn-secondary call_object">Cpu</button>
+                    <button type="button" value="Fan" class="btn btn-success call_object">Cooling</button>
+                    <button type="button" value="Hdd" class="btn btn-danger call_object">Hdd</button>
+                    <button type="button" value="Keyboard" class="btn btn-warning call_object">Keyboard</button>
+                    <button type="button" value="Main" class="btn btn-info call_object">Main</button>
+                    <button type="button" value="Monitor" class="btn btn-light call_object">Monitor</button>
+                    <button type="button" value="Mouse" class="btn btn-dark call_object">Mouse</button>
+                    <button type="button" value="Psu" class="btn btn-warning call_object">Psu</button>
+                    <button type="button" value="Ram" class="btn btn-info call_object">Ram</button>
+                    <button type="button" value="Ssd" class="btn btn-light call_object">Ssd</button>
+                    <button type="button" value="Vga" class="btn btn-dark call_object">Vga</button>
+                </div>
+{#                rendering list_product by ajax call by id on button#}
+                <div class="row build_product" style="padding-left: 15px; padding-right: 15px">
+
+                </div>
+            </section>
+        </div>
+        <div class="col-1 " style="background-color: lightgreen;min-width: 200px">
+            <div class="sidebar-left position-sticky float-left add_product" style="width: 170px">
+                <div class="product-box">
+                    <img id="product-img" class='img-box' src="{{ url_for('static', filename='Categories/img/Keyboard/250_10802_keyboard_fuhlen_l411_usb_black.jpg')}}" alt="none">
+                    <a style="padding-right: 5px; font-weight: bold" id="product-price">8.000.000đ</a>
+                    <button id="delete_product" type="button" class="btn btn-outline-danger" style="padding: 5px!important; background-color: white; color: red">X</button>
+                </div>
+                <div class="product-box">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/build.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/slide-index.js') }}" type="text/javascript"></script>
+{#    <script src="{{ url_for('static', filename='js/ajax.js') }}" type="text/javascript"></script>#}
+    <script>
+        $(".call_object").click(function () {
+            var call_arg = $(this).val();
+            $.ajax({
+                url: "/call_prodcut",
+                type: "get",
+                data: {call_arg: call_arg},
+
+                success: function (response) {
+                    $(".build_product").html(response);
+                },
+                error: function (xhr) {
+                    //Do Something to handle error
+                }
+            });
+        });
+    </script>
+    <script>
+        $(".call_object").click(function () {
+        var call_arg = $(this).val();
+        $.ajax({
+            url: "/categories",
+            type: "get",
+            data: {call_arg: call_arg},
+
+            success: function (response) {
+                $(".categories").html(response);
+            },
+            error: function (xhr) {
+                //Do Something to handle error
+            }
+        });
+    });
+    </script>
+{% endblock %}
+
+{% endblock %}
+
+

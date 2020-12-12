@@ -1,0 +1,18 @@
+ danh muc  , hang san xuat  , khoang gia ,  dong cpu ,  the he cpu ,  socket 
+cpu-intel,amd,duoi-2trieu,intel-celeron-1-1,intel-cooper-lake,lga-1200
+cpu-amd,intel,2trieu-4trieu,intel-pentium,intel-comet-lake-s,lga-2011
+- No Information,- No Information,4trieu-8trieu,intel-core-i3-1-1-1-1-1,intel-cascade-lake-x,lga-2011-v3
+- No Information,- No Information,tren-8trieu,intel-core-i5-1-1-1-1-1,intel-cascade-lake,lga-1151
+- No Information,- No Information,- No Information,intel-core-i7-1-1-1-1-1,intel-coffee-lake-1,lga-1151-v2
+- No Information,- No Information,- No Information,intel-core-i9-1-1-1-1,intel-kaby-lake-1,lga-2066
+- No Information,- No Information,- No Information,intel-xeon-1-1-1,intel-skylake-x-1,lga-3647
+- No Information,- No Information,- No Information,amd-athlon,intel-skylake-w,amd-am4-1
+- No Information,- No Information,- No Information,amd-ryzen-3-1-1-1-1,intel-skylake-sp,amd-strx4-1
+- No Information,- No Information,- No Information,amd-ryzen-5-1-1-1-1,intel-broadwell-e,amd-sp3
+- No Information,- No Information,- No Information,amd-ryzen-7-1-1-1-1,intel-haswell-e,lga-4189
+- No Information,- No Information,- No Information,amd-ryzen-9-1-1-1-1,intel-ivy-bridge-ep,- No Information
+- No Information,- No Information,- No Information,amd-ryzen-threadripper-1,amd-ryzen-5000-series,- No Information
+- No Information,- No Information,- No Information,amd-ryzen-epyc,amd-ryzen-3000-series-1,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-ryzen-threadripper-3000-series,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-ryzen-2000-series-1,- No Information
+- No Information,- No Information,- No Information,- No Information,amd-ryzen-epyc,- No Information

@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-4" style="border-right: #222222; ">
+        h1 * Name
+        p  * content
+    </div>
+    <div class="col">
+        <div class="container-fluid">
+            <div class="row blog">
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    for link in list_link[a; ai]
+                                        <div class="col-md-3">
+                                            <a>
+                                                <img src="{{ url_for('static', filename= link)}}" alt="none">
+                                            </a>
+                                        </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    for link in list_link[ai; aj]
+                                        <div class="col-md-3">
+                                            <a>
+                                                <img src="{{ url_for('static', filename= link)}}" alt="none">
+                                            </a>
+                                        </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
