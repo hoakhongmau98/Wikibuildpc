@@ -5,10 +5,15 @@ import pandas as pd
 import time
 
 build_blueprint = Blueprint('build', __name__)
+lst_img = 0
+lst_category = 0
 
 
 @build_blueprint.route('/call_prodcut')
 def product():
+    global lst_img
+    if lst_category ==0:
+        lst_img = 0
     # arg == name table
     json = []
     pagenumber = 0
@@ -30,7 +35,7 @@ def product():
         after = pagenumber*15+15
 
     for i in range(begin, after):
-        print(i)
+        # print(i)
         code = obj_element[i].Code
         obj_product = products.query.filter_by(Code=code).first()
         linkimg = '/static/' + obj_product.img_directory
@@ -72,14 +77,43 @@ def product():
 
 @build_blueprint.route('/add_product')
 def add_product():
+    global lst_img
     lst_arg = request.args.get('call_add')
-    print(lst_arg)
-    return render_template("build/basket.html")
+    obj_product = products.query.filter_by(Code=lst_arg).first()
+    price = obj_product.slase_price
+    # print(len(price))
+    if 3 < len(price) < 7:
+        price = price[0:-3] + ',' + price[-3:] + ' đ'
+    elif len(price) < 10:
+        # print('here')
+        price = price[0:-6] + ',' + price[-6:-3] + ',' + price[-3:] + ' đ'
+    elif len(price) < 13:
+        price = price[0:-9] + ',' + price[-9:-6] + ',' + price[-6:-3] + ',' + price[-3:] + ' đ'
+    else:
+        price = ''
+    choices = {'linkimg': obj_product.img_directory, 'price': price}
+    lst_img += 1
+    print(lst_img)
+    return render_template("build/basket.html", choices=choices)
 
 
 @build_blueprint.route('/categories')
 def categories():
-    return render_template("build/categories.html")
+    global lst_category
+    namecategory = request.args.get('call_arg')
+    category = {}
+    # print(namecategory)
+    df = pd.read_sql_query('select * from category_'+namecategory, db.engine)
+    # print(df)
+    colname = df.columns
+    # print(colname)
+    for name in colname:
+        data = df[name]
+        check = df[name] != '- No Information'
+        category[name] = list(data[check])
+    lst_category = lst_category +1
+    print(category)
+    return render_template("build/categories.html", category=category)
 
 
 # Đoạn mã sau chỉ được optimaze cho từng database <=> folder.csv

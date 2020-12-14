@@ -2,7 +2,7 @@
 <div class="item col-2" style="min-width: 250px; margin-right: 20px; margin-left: 20px">
     <div class="thumbnail">
         <img class="group list-group-image"
-             src="{{ product['linkimg'] }}" alt=""/>
+             src="{{ product['linkimg'] }}" alt="" style="height: 250px; width: 250px"/>
         <div class="caption" style="padding-top: 15px">
             <p class="group inner list-group-item-heading p-tag" style="font-weight: bold">
                 {{ product['name'] }}</p>
@@ -11,11 +11,10 @@
                     <p class="lead">{{ product['saleprice'] }}</p>
                 </div>
                 <div class="col-md-4">
-                    <button type="button" id="call_add" value="{{ product['code'] }}" class="btn btn-success">
-                        V
+                    <button type="button" value="{{ product['code'] }}" class="btn btn-success call_add">
+                        +
                     </button>
                     <br>
-                    {#                    <a class="btn btn-success call_add" >Add to cart</a>#}
                 </div>
             </div>
         </div>
@@ -23,45 +22,14 @@
 </div>
 {% endfor %}
 <div class="container-fluid " style="margin-top: 15px; min-height: 65px; margin-bottom: 25px">
-{#    <button class="btn btn-dark next_page" value="{{ direct['pagenext'] }}"> >></button>#}
-
     <button type="button" class="btn btn-primary next_page" value="{{ direct['pagebegin'] }}"><<</button>
     <button type="button" class="btn btn-primary next_page" value="{{ direct['pageprevious'] }}"><</button>
     {{ direct['currentpagenumber'] }}/{{ direct['endpagenumber'] }}
     <button type="button" class="btn btn-primary next_page" value="{{ direct['pagenext'] }}">></button>
     <button type="button" class="btn btn-primary next_page" value="{{ direct['pageend'] }}">>></button>
-{#direct = {'pageprevious': pageprevious, 'pagenext': pagenext, 'pagebegin': obj, 'pageend': pageend}#}
-{##}
-{#{% if direct[pageprevious] == direct[pagebegin] %}#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pagebegin] }}"><<</button>#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pageprevious] }}"><</button>#}
-{#    {{ direct[pageend] }}/{{ direct[pageend] }}#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pagenext] }}" disabled>></button>#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pageend] }}" disabled>>></button>#}
-{#{% elif direct[pageend] == 1 %}#}
-{#    {% if direct[1] == direct[0] %}#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pagebegin] }}" disabled><<</button>#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pageprevious] }}" disabled><</button>#}
-{#        {{ 1/1 }}#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pagenext] }}" disabled>></button>#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pageend] }}" disabled>>></button>#}
-{#    {% else %}#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pagebegin] }}" disabled><<</button>#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pageprevious] }}" disabled><</button>#}
-{#        {{ direct[0] }}/{{ direct[1] }}#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pagenext] }}">></button>#}
-{#        <button type="button" class="btn btn-primary next_page" value="{{ direct[pageend] }}">>></button>#}
-{#    {% endif %}#}
-{##}
-{#{% else %}#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pagebegin] }}"><<</button>#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pageprevious] }}"><</button>#}
-{#    {{ direct[0] }}/{{ direct[1] }}#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pagenext] }}">></button>#}
-{#    <button type="button" class="btn btn-primary next_page" value="{{ direct[pageend] }}">>></button>#}
-{#{% endif %}#}
-
 </div>
+
+
 <script>
     $(".next_page").click(function () {
         var call_arg = $(this).val();
@@ -81,23 +49,21 @@
 </script>
 
 
-{# Đoạn script này có thể di chuyển gộp lại vào file ajax.js hay không?#}
-<!--
-{#<script>#}
-{#    $("#call_add").click(function () {#}
-{#        var add_arg = $(this).val();#}
-{#        $.ajax({#}
-{#            url: "/add_product",#}
-{#            type: "get",#}
-{#            data: {call_add: add_arg},#}
-{##}
-{#            success: function (response) {#}
-{#                $(".add_product").html(response);#}
-{#            },#}
-{#            error: function (xhr) {#}
-{#                //Do Something to handle error#}
-{#            }#}
-{#        });#}
-{#    });#}
-{#</script>#}
--->
+<script>
+    $(".call_add").click(function () {
+        var add_arg = $(this).val();
+        $.ajax({
+            url: "/add_product",
+            type: "get",
+            data: {call_add: add_arg},
+
+            success: function (response) {
+                $(".product-box").html(response);
+            },
+            error: function (xhr) {
+                //Do Something to handle error
+            }
+        });
+    });
+</script>
+
