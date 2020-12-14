@@ -6,9 +6,9 @@ base_dir = os.path.dirname(os.path.abspath(__file__)) + '/app/static/database'
 class BaseConfig(object):
     """Base configuration."""
 
-    APP_NAME = 'Flask App'
+    APP_NAME = 'Wiki & BuildPc'
     DEBUG_TB_ENABLED = False
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'Ensure you set a secret key, this is important!')
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'Tran*$$48936Trang')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     WTF_CSRF_ENABLED = False
 

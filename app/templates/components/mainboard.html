@@ -1,0 +1,227 @@
+{% extends "components/components.html" %}
+
+{% block banner1 %}
+<img src="{{ url_for('static', filename='webview/mainboard-banner1.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner2 %}
+<img src="{{ url_for('static', filename='webview/mainboard-banner2.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner3 %}
+<img src="{{ url_for('static', filename='webview/mainboard-banner3.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner4 %}
+<img src="{{ url_for('static', filename='webview/mainboard-banner4.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+
+
+{% block header %}
+    <div class="row justify-content-center" style="padding-top: 20px!important; background-color: #696969; margin: unset">
+            <div class="section-title text-center">
+                <h3 class="text-white">MainBoard - Bo mạch chủ - Motherboard</h3>
+                <p style="color: white">Thuật ngữ Bo mạch chủ thường dùng nhiều nhất trong ngành công nghiệp máy tính nói chung như một từ
+                    dành riêng, mặc dù có rất nhiều thiết bị khác cũng có thể có bản mạch chính được gọi là "bo mạch
+                    chủ". Bài viết này nói đến Bo mạch chủ trong các máy tính nói chung mà chú trọng nhiều hơn là của
+                    máy tính cá nhân.
+                    Bo mạch chủ của máy tính trong tiếng Anh là motherboard hay mainboard và thường được nhiều người gọi
+                    tắt là: mobo, main.</p>
+            </div>
+    </div>
+    <div style="background-color: #696969">
+        <img src="{{ url_for('static', filename='webview/mainboard_header.png') }}"style="max-width: 100%; max-height: 100%; display: inline-block">
+    </div>
+{% endblock %}
+{% block content1 %}
+        <div class="container-fluid" style="min-height: 400px; background-image: linear-gradient(#696969, #000000); margin: unset">
+            <div class="row">
+                <div class="col" style="float: left; min-height: 400px">
+                    <ul class="flex-center" style="color: white; padding-top: 15px">
+                        <h2 class="section-title text-center">Kích thước, chức năng, phân cấp.</h2>
+                        <li>
+                            <p>Các kích thước của một mainboard dành cho người dùng cuối
+                                gồm: mini-ITX,
+                                Micro-ATX, ATX, EATX.</p>
+                        </li>
+                        <li>
+                            <p>Một mainboard có thể mang trong mình nhiều công nghệ phụ
+                                trợ như: Khả năng ép
+                                xung, công nghệ audio-boost,
+                                Khả năng đồng bộ ánh sáng-quạt, hệ thống tản nhiệt thụ động cho các linh kiện, Dual_BIOS
+                                - khả
+                                năng tự phát hiện lỗi
+                                ... </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5" style="padding-right: unset;background-size: cover; background-image: url({{ url_for('static', filename='webview/mainboard_1.jpg') }}); min-width: 400px; float: right">
+{#                    <img src="{{ url_for('static', filename='webview/mainboard_1.jpg') }}" style="max-width: 100%; max-height: 100%; float: right">#}
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block textcenter %}
+
+<div style="background-color: #696969">
+    <img src="{{ url_for('static', filename='webview/mainboard_capacitor.jpg') }}"
+         style="max-width: 100%; max-height: 100%">
+</div>
+<div class="row justify-content-center" style="padding-top: 50px!important; background-image: linear-gradient(#000000,#696969); margin:unset">
+    <div class="section-title text-center">
+        <h4 style="color:#fff;">Phases Digital VRM</h4>
+        <p style="color:#fff;">Để đạt được sự ổn định về năng lượng cho toàn bộ hệ thống, một mainboard thường có 1
+            cổng
+            24Pin và 1-2 cổng 4 ping cung cấp năng lượng chính cho CPU</p>
+        <p style="color:#fff;">Các Phases điện có độ ổn định cao cung cấp cho CPU khả năng ép xung, hoạt động thời
+            gian
+            dài. Cùng đó các phase điện sẽ sinh ra một lượng lớn nhiệt lượng.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content2 %}
+        <div class="container-fluid" style="min-height: 500px; background-image: linear-gradient(#696969, #000000); margin: unset">
+            <div class="row">
+                <div class="col-5" style="display: block; background-size: cover;background-image: url({{ url_for('static', filename='webview/mainboard_PCIE.jpg') }}); padding-right: unset">
+                </div>
+                <div class="col" style="float: left; min-height: 500px">
+                    <ul class="flex-center" style="padding-left: 35px;color: white; padding-top: 50px">
+                        <h2 class="section-title text-center">Các thiết bị kết nối ngoại vi</h2>
+                        <li>
+                            <p>Sự phân luồng của chipset tạo ra các luồng kết nối cho các
+                                thiết bị ngoại vi.</p>
+                        </li>
+                        <li>
+                            <p>Mỗi dòng mainboard sẽ mang một Chipset đảm nhận giao tiếp
+                                với CPU. Tên của
+                                Chipset cũng là hậu tố trong tên của
+                                một mainboard giúp phân biệt rõ ràng các dòng mainboard khác nhau.</p>
+                        </li>
+                        <li>
+                            <p>Các khe PCIE/M.2 là các kết nối cho GPU và các ổ cứng ssd theo
+                                chuẩn M.2 mới.</p>
+                        </li>
+                        <li>
+                            <p>Cổng chuyền dữ liệu sata3. Các kết nối như: Audio, Lan, USB,
+                                Thunderboost, PS2, HDMI, DVI.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+<div class="container-fluid" style="background-color: #696969; padding: 15px 15px 15px 15px">
+    <div class="row">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[0]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[1]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[2]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[3]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[4]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[5]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.item-->
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[6]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[7]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[8]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[9]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[10]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/Main' + '/' + index_object[11]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.item-->
+            </div>
+            <!--.carousel-inner-->
+        </div>
+        <!--.Carousel-->
+    </div>
+</div>
+{% endblock %}
+{% block imgfooter %}
+
+{% endblock %}

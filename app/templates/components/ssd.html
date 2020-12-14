@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block links %}
+{#    <link href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" media="screen" type="text/css">#}
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/ssd.min.css') }}" rel="stylesheet" media="screen" type="text/css">
+
+{% endblock %}
+
+{% block content %}
+<header class="masthead text-white text-center" style="height: 600px;padding-top: 20px;
+        background: url({{ url_for('static', filename='img/index_img/ssd_header.jpg')}}) no-repeat center center;
+        background-size: cover">
+    <div class="container">
+        <div class="row" >
+            <div class="col-xl-9 mx-auto" style="height: 100px;">
+                <h1 style="color: #fff">SSD - Solid State Drive</h1>
+                <h3 style="color: #fff">Nhỏ gọn. Sử dụng chíp nhớ. Tốc độ nhanh. Bảo vệ dữ liệu</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Icons Grid -->
+<section class="features-icons text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-screen-desktop m-auto text-primary"></i>
+                    </div>
+                    <h3>Tốc độ</h3>
+                    <p class="lead mb-0">Ổ SSD mang lại tốc độ vượt trội so với ổ cứng truyền thống. với công nghệ các
+                        chíp nhớ cải thiện mạnh tốc độ và trải nghiệm người dùng.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-layers m-auto text-primary"></i>
+                    </div>
+                    <h3>Tính an toàn</h3>
+                    <p class="lead mb-0">Được cải thiện qua nhiều năm, ổ SSD đạt được sự tin tưởng khi tuổi thọ gần bằng
+                        HDD nhưng tốc độ không bị hao mòn theo thời gian.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-check m-auto text-primary"></i>
+                    </div>
+                    <h3>Easy to Use</h3>
+                    <p class="lead mb-0">Kích thước nhỏ gọn hơn nhiều so với ổ HDD, dễ dàng cài đặt mà không gặp quá
+                        nhiều trở ngại hay chiếm diện tích, hướng tới những mẫu laptop mỏng nhẹ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="showcase" style="background-image: url({{ url_for('static', filename='img/index_img/ssd_bg.jpg') }});
+        background-attachment: fixed; background-position: top center;
+        background-repeat: no-repeat; background-size: cover">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/ssd.jpg') }});"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text"  style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">Sự khác biệt so với HDD</h2>
+                <p class="lead mb-0" style="color: #fff">Với hệ thống các chíp nhớ nano, cùng với ram điều khiển, những
+                    ổ cứng ssd đạt được độ mỏng nhẹ do không quá cồng kềnh như sử dụng đĩa cứng. không gây tiếng ồn,
+                    nhưng nhược điểm là sinh nhiều nhiệt khi hoạt động.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/ssd_sata3.jpg') }});"></div>
+            <div class="col-lg-6 my-auto showcase-text" style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">SSD sử dụng cổng giao tiếp sata3/6G</h2>
+                <p class="lead mb-0" style="color: #fff">Đối với SSD tốc độ của HDD như rùa bò, nhờ sử dụng các chíp
+                    nhớ, ssd có thể đạt tốc độ gấp 2.3.10 lần HDD truyền thống. đi kèm với sự ổn định. Là bước tiến mới
+                    trong công nghệ lưu trữ giữ liệu</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/ssd_m2.jpg') }});"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">Ssd sử dụng cổng giao tiếp M.2</h2>
+                <p class="lead mb-0" style="color: #fff">Sử dụng giao tiếp M.2 cũng như giao tiếp PCIE trên bo mạch chủ,
+                    loại bỏ được giới hạn của SATA 6Gbs, cùng với độ nhỏ ngọn không thể chối từ. Các SSD M.2 có tốc độ
+                    còn cao hơn các SSD truyền thống</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light" id="about" style=" height: 500px;padding-top: 150px">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto" z`="">
+                <h2>Bộ nhớ đệm: Intel® Optane™/ AMD StoreMI</h2>
+                <h2>Tăng tốc trải nghiệm của bạn dựa trên những ổ cứng HHD.</h2>
+                <p class="lead mb-5">Tận hưởng trải nghiệm điện toán nhanh hơn, mượt mà hơn và tốc độ phản hồi ấn tượng
+                    với Công nghệ Bộ nhớ đệm tích hợp. Là công nghệ mang giải pháp tăng tốc dữ liệu cho các ổ cứng HDD
+                    , với nguyên lý tạo một phân vùng ảo hoặc sử dụng bộ nhớ bên ngoài làm nơi lưu trữ, cải thiện thời gian
+                    loading các phần mềm - dữ liệu của bạn.</p>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What is Optane ?</a>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What is AMD StoreMI ?</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

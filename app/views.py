@@ -1,5 +1,6 @@
 from flask import render_template, Blueprint
 from .index.process import getdata
+from .compoments.getlistimg import  getimg
 
 main_blueprint = Blueprint('main', __name__)
 
@@ -14,3 +15,8 @@ def index():
 def build():
     return render_template('build/build.html')
 
+
+@main_blueprint.route('/mainboard')
+def mainboard():
+    index_object = getimg('Main')
+    return render_template('components/mainboard.html', index_object=index_object)

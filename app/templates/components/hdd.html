@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block links %}
+{#    <link href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" media="screen" type="text/css">#}
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/ssd.min.css') }}" rel="stylesheet" media="screen" type="text/css">
+
+{% endblock %}
+
+{% block content %}
+<header class="masthead text-white text-center" style="height: 600px;padding-top: 20px;
+        background: url({{ url_for('static', filename='img/index_img/hdd_header.jpg')}}) no-repeat center center;
+        background-size: cover">    <div class="container">
+        <div class="row" >
+            <div class="col-xl-9 mx-auto" style="height: 100px;">
+                <h1 style="color: #fff">HDD - Hard Disk Drive</h1>
+                <h3 style="color: #fff">Ổn định. Dung lượng lớn. An toàn. Server storage</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Icons Grid -->
+<section class="features-icons text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-screen-desktop m-auto text-primary"></i>
+                    </div>
+                    <h3>Ổn định</h3>
+                    <p class="lead mb-0">Sử dụng công nghệ cũ, không có nghĩa HDD không còn chỗ đứng. Sự ổn định của HDD
+                    vẫn là lựa chọn hàng đầu cho các server.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-layers m-auto text-primary"></i>
+                    </div>
+                    <h3>Dung lượng lớn</h3>
+                    <p class="lead mb-0">Giá thành của một ổ cứng HDD thường rẻ và mang lại dung lượng thường gấp 4 lần so với
+                    một ổ cứng SSD cùng tầm giá.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-check m-auto text-primary"></i>
+                    </div>
+                    <h3>Easy to Use</h3>
+                    <p class="lead mb-0">Tính an toàn tiện dụng và dễ dàng lắp đặt, ổ cứng hdd có nhiều công dụng và được sử
+                    dụng làm kho lưu trữ dữ liệu an toàn cho các nhân cũng như doanh nghiệp.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="showcase" style="background-image: url({{ url_for('static', filename='img/index_img/ssd_bg.jpg') }});
+        background-attachment: fixed; background-position: top center;
+        background-repeat: no-repeat; background-size: cover">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/hdd_data.png') }});"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text"  style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">Dung lượng lưu trữ vượt trội</h2>
+                <p class="lead mb-0" style="color: #fff">Một ổ cứng HDD được tạo dựng trên các đĩa nhớ.
+                Mỗi một đĩa nhớ có dung lượng nhất định 512G/1T/2T.
+                Với kích thước có thay đổi, một ổ cứng HDD truyền thống có thể lắp được nhiều hơn 1 đĩa nhớ.
+                Cộng dồn các đĩa nhớ đem lại dung lượng cực lớn, tạo lợi thế về dung lượng bộ nhớ hơn các ổ SSD.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/hdd_speed.jpg') }});"></div>
+            <div class="col-lg-6 my-auto showcase-text" style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">Tốc độ đã được cải thiện</h2>
+                <p class="lead mb-0" style="color: #fff">Trước đây, hdd thường có tốc độ trong khoảng 120MB/120MB phụ thuộc vào
+                tốc độ vòng quay của motor bên trong, tốc độ vòng quay càng cao(5200rmp/7200rpm) sẽ đem lại tốc độ cao.
+                Tuy yếu thế hơn các ổ SSD sử dụng chíp NAND, nhưng đã có nhiều giải pháp giúp tăng tốc HDD
+                Sử dụng nhiều bộ nhớ đệm hơn, tích hợp công nghệ Intel Optane hay StoreMi.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/hdd_storage.png') }});"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="background-color:rgba(0, 0, 0, 0.5) ">
+                <h2 style="color: #FFFFFF">Độ bền và sự ổn định</h2>
+                <p class="lead mb-0" style="color: #fff">Một ổ cứng HDD thường có tuổi thọ cao hơn ssd, cùng đó là sự ổ định.</p>
+                <p class="lead mb-0" style="color: #fff">Với công nghệ RAID, giúp ghép nối nhiều ổ cứng HDD lại, đem lại tốc độ,
+                độ an toàn dữ liệu cũng như nhiều tài nguyên hơn so với một ổ HDD.</p>
+                <p class="lead mb-0" style="color: #fff">Là giải pháp tối ưu cho các serve, và dần được thay thế bởi các ổ cứng SSD
+                hiệu năng cao.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light" id="about" style=" height: 500px;padding-top: 150px">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto" z`="">
+                <h2>Bộ nhớ đệm: Intel® Optane™/ AMD StoreMI</h2>
+                <h2>Tăng tốc trải nghiệm của bạn dựa trên những ổ cứng HHD.</h2>
+                <p class="lead mb-5">Tận hưởng trải nghiệm điện toán nhanh hơn, mượt mà hơn và tốc độ phản hồi ấn tượng
+                    với Công nghệ Bộ nhớ đệm tích hợp. Là công nghệ mang giải pháp tăng tốc dữ liệu cho các ổ cứng HDD
+                    , với nguyên lý tạo một phân vùng ảo hoặc sử dụng bộ nhớ bên ngoài làm nơi lưu trữ, cải thiện thời gian
+                    loading các phần mềm - dữ liệu của bạn.</p>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What is Optane ?</a>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What is AMD StoreMI ?</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

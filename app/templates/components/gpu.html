@@ -1,0 +1,73 @@
+{% extends "components/main-ram-gpu.html" %}
+
+{% block banner1 %}
+<img src="{{ url_for('static', filename='img/index_img/gpu/banner1.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner2 %}
+<img src="{{ url_for('static', filename='img/index_img/gpu/banner2.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner3 %}
+<img src="{{ url_for('static', filename='img/index_img/gpu/banner3.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+{% block banner4 %}
+<img src="{{ url_for('static', filename='img/index_img/gpu/banner4.jpg') }}" alt=""
+     class="image"/>
+{% endblock %}
+
+
+{% block header %}
+    <div class="text-center" style="margin-left: 150px; margin-right: 150px; margin-top: 50px; margin-bottom: 50px">
+        <h1 style="text-shadow: 0px 0px 4px #fc4a1a, 0px 0px 5px #fc4a1a, 0px 0px 4px #fc4a1a, 0px 0px 5px #fc4a1a; color: #fff">GPU - Graphics Processing Unit</h1>
+        <h4 style="color: #fff">GPU là từ viết tắt của cụm Graphics Processing Unit, có nghĩa là bộ xử lý các tác vụ có liên quan tới đồ họa. GPU được xem là một bộ xử lý chuyên dùng để giải quyết những vấn đề liên quan tới khả năng hiển thị hình học của máy tính. Bộ phận này đảm bảo các tác vụ liên quan tới hình ảnh hay hình khối.</h4>
+        <h4 style="color: #fff">GPU liên kết mật thiết với vi xử lý trung tâm CPU, tuy nhiên, cơ chế hoạt động của GPU hoàn toàn khác biệt. Hiện nay, GPU thường được tích hợp rất nhiều tính năng nhằm đáp ứng nhu cầu hiển thị đồ họa cơ bản của người tiêu dùng.</h4>
+    </div>
+    <img src="{{ url_for('static', filename='img/index_img/gpu/gpu_header.jpg') }}" style="width: 100%; max-height: 600px">
+{% endblock %}
+
+{% block showcase1 %}
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img"
+                     style="background-image: url({{ url_for('static', filename='img/index_img/gpu/gpu_1.jpg') }});"></div>
+                <div class="col-lg-6 my-auto showcase-text" style="background-color: #000000">
+                    <h2 style="color: #FFFFFF">Chức năng chính của GPU</h2>
+                    <p class="lead mb-0" style="color: #fff">- GPU giúp hỗ trợ các game 3D và những phần mềm kiến trúc như Vray, 3DSmax, Corona.</p>
+                    <p class="lead mb-0" style="color: #fff">- GPU đảm bảo vận hành tốt các ứng dụng dựng hình ảnh và video chuyên nghiệp như Adobe Premiere, Camtasia, After Effects.</p>
+                    <p class="lead mb-0" style="color: #fff">Các ứng dụng cơ bản của GPU là sử dụng trong hệ thống nhúng, laptop, PC chuyên dụng dành cho game thủ hoặc các máy trạm Workstation. GPU xuất hiện phổ biến nhất là trong các laptop cá nhân. Bạn có thể kiểm tra thông số GPU ở phần card đồ họa hoặc Maiboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block textcenter %}
+<div class="text-center align-bottom"
+     style="background: no-repeat; background-image: url({{ url_for('static', filename='img/index_img/gpu/gpu_textcenter.png') }}); width: 100%;height: 800px">
+    <div style="margin-top: 0;height: 750px;padding-top: 650px;">
+        <h4 style="color:#fff;">Cấu trúc và chức năng.</h4>
+        <p style="color:#fff;margin-bottom: 0px;">Công nghệ của GPU ngày càng phát triển mạnh hơn, mang tính ứng dụng cao hơn cả cho các ngành khoa học phụ trợ.</p>
+        <p style="color:#fff;margin-bottom: 0px;">Kiến trúc vi chip được cải tiến liên lục, tăng số lượng các bóng bán dẫn(Nhân Cuda - Processing Unit) trên 1 đế chip, giúp tăng tốc độ xử lý.</p>
+        <p style="color:#fff;margin-bottom: 0px;">Ngoài khả năng tính toán và xử lý hình ảnh. GPU được xử dụng cho ngành khoa học máy tính với các ứng dụng trong ML, AI, Data.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block showcase2 %}
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img"
+                 style="background-image: url({{ url_for('static', filename='img/index_img/gpu/gpu_2.jpg') }});"></div>
+            <div class="col-lg-6 my-auto showcase-text" style="background-color: #000000">
+                <h2 style="color: #FFFFFF">Sư khác nhau giữa GPU và CPU là gì?</h2>
+                <p class="lead mb-0" style="color:#fff">- CPU là cơ quan đầu não đóng vai trò phân tích và xử lý dữ liệu được truyền tải tới máy tính thông qua định dạng các tệp lệnh. Trong khi đó, GPU được thiết kế để đảm nhiệm vai trò xử lý các khối dữ liệu hình ảnh, đồ họa và video. Ngoài ra, GPU còn hỗ trợ xử lý các thông tin đa luồng, song song và bộ nhớ ở tốc độ cao.</p>
+                <p class="lead mb-0" style="color:#fff">- Theo ước tính, khoảng 80% Transistors của GPU được sử dụng để tính toán dữ liệu chứ không thể nhận và điều khiển luồng thông tin như CPU. Do đó, có thể hiểu đơn giản là GPU nằm ở cấp độ phân loại thấp hơn CPU và là một bộ phận hỗ trợ của CPU.</p>
+{#                <p class="lead mb-0" style="color: #fff">Hiện nay, kỹ thuật lập trình GPU đang dần trở nên đơn giản hơn. Điều này đã mở ra nhiều tiềm năng khai thác nhằm tăng tốc độ xử lý đồ họa cho máy tính nhằm đáp ứng các nhu cầu sử dụng đa dạng. Hai thương hiệu chuyên sản xuất GPU nổi tiếng nhất trên thị trường hiện nay là Nvidia và AMD/ATI.</p>#}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

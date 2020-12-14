@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet" media="screen">
-
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" media="screen">
     {% block links %}{% endblock %}
 </head>
 
@@ -30,7 +30,7 @@
     <div class="container">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light justify-content-between bg-dark"
              style="height: 60px">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="/">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,25 +39,25 @@
                 <!-- Main Navigation -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="build_object">Build Your PC</a>
+                        <a class="nav-link" href="/build">Build Your PC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mainboard">MainBoard</a>
+                        <a class="nav-link" href="/mainboard">MainBoard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ram">RAM</a>
+                        <a class="nav-link" href="components/ram">RAM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gpu">GPU</a>
+                        <a class="nav-link" href="components/gpu">GPU</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="components/cpu" id="navbarDropdownPortfolio" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false" style="margin-right: 0px; margin-left: 0px">
                             CPU
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="intel">INTEL</a>
-                            <a class="dropdown-item" href="amd">AMD</a>
+                            <a class="dropdown-item" href="components/intel">INTEL</a>
+                            <a class="dropdown-item" href="components/amd">AMD</a>
 
                         </div>
                     </li>
@@ -67,8 +67,8 @@
                             Storage
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="ssd">SSD</a>
-                            <a class="dropdown-item" href="hdd">HDD</a>
+                            <a class="dropdown-item" href="components/ssd">SSD</a>
+                            <a class="dropdown-item" href="components/hdd">HDD</a>
 
                         </div>
                     </li>
@@ -78,10 +78,10 @@
                             Other Pages
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="gear">Gear</a>
-                            <a class="dropdown-item" href="case">Case</a>
-                            <a class="dropdown-item" href="psu">Psu</a>
-                            <a class="dropdown-item" href="idcooling">Cooling</a>
+                            <a class="dropdown-item" href="components/gear">Gear</a>
+                            <a class="dropdown-item" href="components/case">Case</a>
+                            <a class="dropdown-item" href="components/psu">Psu</a>
+                            <a class="dropdown-item" href="components/cooling">Cooling</a>
 
                         </div>
                     </li>
@@ -122,8 +122,11 @@
         <div class="row py-4">
             <div class="col-lg-6 col-md-4 mb-4 mb-lg-0">
                 <h6 id='about' class="text-uppercase font-weight-bold mb-4">About</h6>
-                <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt.</p>
+                <p class="font-italic text-muted">This website create by Nguyễn Viết Cường - Huyenchi.
+                    Its maybe help you know about each components of your computer.</p>
+                <p class="font-italic text-muted">Don't foget check tab Build your PC, i create it for you if you want to create a new computer.
+                    Hope you have a nice experience on my website. Thank you!!
+                </p>
             </div>
             <div class="col-lg-2 col-md-3 mb-4 mb-lg-0">
                 <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
@@ -135,13 +138,13 @@
             <div class="col-lg-2 col-md-3 mb-4 mb-lg-0">
                 <h6 class="text-uppercase font-weight-bold mb-4">Social Links</h6>
                 <ul class="list-unstyled mb-0">
-                    <li class="list-item"><a href="https://facebook.com" target="_blank" title="facebook"><span
+                    <li class="list-item"><a href="https://facebook.com/Nguyencuong97/" target="_blank" title="facebook"><span
                             class="fa fa-facebook">Facebook</span></a>
                     </li>
-                    <li class="list-item"><a href="https://twitter.com" target="_blank" title="twitter"><span
+                    <li class="list-item"><a href="https://twitter.com/" target="_blank" title="twitter"><span
                             class="fa fa-twitter"></span>Twitter</a>
                     </li>
-                    <li class="list-item"><a href="https://instagram.com" target="_blank" title="instagram"><span
+                    <li class="list-item"><a href="https://instagram.com/huyen.chi.0136/" target="_blank" title="instagram"><span
                             class="fa fa-instagram"></span>Instagram</a></li>
                 </ul>
             </div>
