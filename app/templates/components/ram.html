@@ -1,78 +1,238 @@
-{% extends "components/main-ram-gpu.html" %}
+{% extends "components/components.html" %}
 
 {% block banner1 %}
-<img src="{{ url_for('static', filename='img/index_img/ram/banner1.jpg') }}" alt=""
+<img src="{{ url_for('static', filename='webview/ram-banner1.jpg') }}" alt=""
      class="image"/>
 {% endblock %}
 {% block banner2 %}
-<img src="{{ url_for('static', filename='img/index_img/ram/banner2.jpg') }}" alt=""
+<img src="{{ url_for('static', filename='webview/ram-banner2.jpg') }}" alt=""
      class="image"/>
 {% endblock %}
 {% block banner3 %}
-<img src="{{ url_for('static', filename='img/index_img/ram/banner3.jpg') }}" alt=""
+<img src="{{ url_for('static', filename='webview/ram-banner3.jpg') }}" alt=""
      class="image"/>
 {% endblock %}
 {% block banner4 %}
-<img src="{{ url_for('static', filename='img/index_img/ram/banner4.jpg') }}" alt=""
+<img src="{{ url_for('static', filename='webview/ram-banner4.jpg') }}" alt=""
      class="image"/>
 {% endblock %}
 
 
 {% block header %}
-    <div class="text-center" style="margin-left: 150px; margin-right: 150px; margin-top: 50px; margin-bottom: 50px">
-        <h1 style="text-shadow: 0px 0px 4px #fc4a1a, 0px 0px 5px #fc4a1a, 0px 0px 4px #fc4a1a, 0px 0px 5px #fc4a1a; color: #fff">Ram - Random Access Memory</h1>
-        <h4 style="color: #fff">Ram - Bộ phận không thể thiếu cho hoạt động của máy tính. Là bộ nhớ truy cập ngẫu nhiên, nơi lưu trữ data xử lý của CPU</h4>
-        <h4 style="color: #fff">Vì là một bộ nhớ truy cập ngẫu nhiên, tốc độ của ram là một yếu tố quan trọng cho việc hoạt động xử lý dữ liệu.</h4>
-        <h4 style="color: #fff">Ram có 2 thông số chính là dung lượng của ram và tốc độ của bus ram. Vì xử dụng chip nhớ nên ram cũng sinh ra một lượng nhiệt không nhỏ.</h4>
+    <div class="row justify-content-center" style="padding-top: 20px!important; background-color: #696969; margin: unset">
+            <div class="section-title text-center">
+                <h3 class="text-white">RAM - Ramdom Access memmory</h3>
+                <p style="color: white">RAM (viết tắt của từ Random Access Memory trong tiếng Anh) là một loại bộ nhớ khả biến cho phép truy xuất đọc-ghi ngẫu nhiên đến bất kỳ vị trí nào trong bộ nhớ dựa theo địa chỉ bộ nhớ. Thông tin lưu trên RAM chỉ là tạm thời, chúng sẽ mất đi khi mất nguồn điện cung cấp.
+                    Vì là một bộ nhớ truy cập ngẫu nhiên, tốc độ của ram là một yếu tố quan trọng cho việc hoạt động xử
+                    lý dữ liệu.
+                    Ram có 2 thông số chính là dung lượng của ram và tốc độ của bus ram. Vì xử dụng chip nhớ nên ram
+                    cũng sinh ra một lượng nhiệt không nhỏ.</p>
+            </div>
     </div>
-    <img src="{{ url_for('static', filename='img/index_img/ram/ram_header.jpg') }}" style="width: 100%; max-height: 600px">
+    <div style="background-color: #696969;" class="container-fluid">
+        <img src="{{ url_for('static', filename='webview/ram_header.webp') }}" style="max-width: 100%; max-height: 100%; display: block; margin-left: auto; margin-right: auto">
+    </div>
 {% endblock %}
-
-{% block showcase1 %}
-    <section class="showcase">
-        <div class="container-fluid p-0">
-            <div class="row no-gutters">
-                <div class="col-lg-6 text-white showcase-img"
-                     style="background-image: url({{ url_for('static', filename='img/index_img/ram/ram_1.jpg') }});"></div>
-                <div class="col-lg-6 my-auto showcase-text" style="background-color: #000000">
-                    <h2 style="color: #FFFFFF">Cấu tạo và chức năng.</h2>
-                    <p class="lead mb-0" style="color: #fff">Một thanh ram được cấu taọ nên từ nhiều chip nhớ được đặt trên một PCB,
-                    dung lượng của ram phụ thuộc vào số chip nhớ và chất lượng của các chip nhớ đó.</p>
-                    <p class="lead mb-0" style="color: #fff">Đi cùng với đó là tốc độ của ram. Thông số được gọi là Bus.
-                    Tốc độ bus ram càng cao càng ảnh hưởng tới tốc độ giao tiếp dữ liệu giữa CPU và Ram.</p>
-                    <p class="lead mb-0" style="color: #fff">Bus ram cơ bản của chuẩn DDR4 từ 2133 tới 3600Mhz. Các chip nhớ đủ chất lượng có thể được ép
-                    xung qua BIOS hoặc qua phần mềm của nhà sản xuất và có thể lên tới 6000Mhz.</p>
+{% block content1 %}
+        <div class="container-fluid" style="min-height: 400px; background-image: linear-gradient(#696969, #000000); margin: unset">
+            <div class="row">
+                <div class="col" style="float: left; min-height: 400px">
+                    <ul class="flex-center" style="color: white; padding-top: 15px">
+                        <h2 class="section-title text-center">Cấu tạo và chức năng.</h2>
+                        <li>
+                            <p>Một thanh ram được cấu taọ nên từ nhiều chip nhớ được đặt trên một PCB, dung lượng của ram phụ thuộc vào số chip nhớ và chất lượng của các chip nhớ đó.</p>
+                        </li>
+                        <li>
+                            <p>Đi cùng với đó là tốc độ của ram. Thông số được gọi là Bus. Tốc độ bus ram càng cao càng ảnh hưởng tới tốc độ giao tiếp dữ liệu giữa CPU và Ram.</p>
+                        </li>                        <li>
+                            <p>Bus ram cơ bản của chuẩn DDR4 từ 2133 tới 3600Mhz. Các chip nhớ đủ chất lượng có thể được ép xung qua BIOS hoặc qua phần mềm của nhà sản xuất và có thể lên tới 6000Mhz.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5" style="padding-right: unset;background-size: cover; background-image: url({{ url_for('static', filename='webview/ram_1.jpg') }}); min-width: 400px; float: right">
                 </div>
             </div>
         </div>
-    </section>
 {% endblock %}
 {% block textcenter %}
-<div class="text-center align-bottom"
-     style="background: no-repeat; background-image: url({{ url_for('static', filename='img/index_img/ram/ram_list.jpg') }}); width: 100%;height: 800px">
-    <div style="margin-top: 0;height: 750px;padding-top: 650px;">
-        <h4 style="color:#fff;">Chuẩn DDR - Double Data Rate</h4>
-        <p style="color:#fff;margin-bottom: 0px;">Công nghệ DDR là 1 trong 3 giao tiếp SDR - DDR - QDR, biểu thị cho khả năng chuyền tải dữ liệu trong một chu kỳ giao tiếp.</p>
-        <p style="color:#fff;margin-bottom: 0px;">Với SDR là 1khối dữ liệu, DDR là 2 và QDR là 4 khối dữ liệu cùng được truyền đi trong 1 lần giao tiếp.</p>
-        <p style="color:#fff;margin-bottom: 0px;">DDR- DDR2 - DDR3 - DDR4 - DDR5 - DDR6: Nếu DDR sẽ chuyền được 2 khối dữ liệu thì với từng cập bậc được nâng cấp, số lượng khối giữ liệu cũng được gấp đôi.
-        Với chuẩn DDR4 hiện tại là 32 khối dữ liệu trong 1 chu kỳ.</p>
+<div style="background-color: #696969">
+    <img src="{{ url_for('static', filename='webview/ram_2.jpg') }}"
+         style="max-width: 100%; max-height: 100%">
+</div>
+<div class="row justify-content-center" style="padding-top: 50px!important; background-image: linear-gradient(#000000,#696969); margin:unset">
+    <div class="section-title text-center">
+        <h4 style="color:#fff;">Lịch sử (tóm tắt)</h4>
+        <p style="color:#fff; padding-left: 25px; padding-right: 25px">Lịch sử Chip RAM có mặt trên thị trường vào cuối những năm 1960, với sản phẩm DRAM là Intel 1103 công bố vào tháng 10 năm 1970. Những chiếc laptop thế hệ đầu được sản xuất vào cuối những năm thập niên 90 được tích hợp bên trong chúng là RAM SDR với tốc độ khá chậm và bộ nhớ rất ít.</p>
+    </div>
+</div>
+<div class="container-fluid"
+     style="background-image: url({{ url_for('static', filename='webview/section5_bg.jpg') }}); background-size: cover;height: 600px; margin: unset">
+<div class="row">
+    <div class="color-6">
+    <ul class="flex-left" style="padding-left: 35px;color: white; padding-top: 50px">
+        <h2 class="section-title text-center">Đặc trưng - Bộ nhớ RAM có 4 đặc trưng sau.</h2>
+        <li>
+            <p>Dung lượng bộ nhớ: Tổng số byte của bộ nhớ (nếu tính theo byte) hoặc là tổng số bit trong bộ nhớ
+                nếu tính theo bit.</p>
+        </li>
+        <li>
+            <p>Tổ chức bộ nhớ: Số ô nhớ và số bit cho mỗi ô nhớ</p>
+        </li>
+        <li>
+            <p>Thời gian thâm nhập: Thời gian từ lúc đưa ra địa chỉ của ô nhớ đến lúc đọc được nội dung của ô
+                nhớ đó.
+            </p>
+        </li>
+        <li>
+            <p>Chu kỳ bộ nhớ: Thời gian giữa hai lần liên tiếp thâm nhập bộ nhớ.</p>
+        </li>
+    </ul>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+
+{% block content2 %}
+<div class="container-fluid"
+     style="min-height: 500px; background-image: linear-gradient(#696969, #000000); margin: unset">
+    <div class="row">
+        <div class="col-5"
+             style="display: block; background-size: cover;background-image: url({{ url_for('static', filename='webview/ram_3.jpg') }}); padding-right: unset">
+        </div>
+        <div class="col" style="float: left; min-height: 500px">
+            <ul class="flex-center" style="padding-left: 35px;color: white; padding-top: 50px">
+                <h2 class="section-title text-center">Chuẩn DDR - Double Data Rate
+                </h2>
+                <li>
+                    <p>Công nghệ DDR là 1 trong 3 giao tiếp SDR - DDR - QDR, biểu thị cho khả năng chuyền tải dữ liệu
+                        trong một chu kỳ giao tiếp.</p>
+                </li>
+                <li>
+                    <p>Với SDR là 1 khối dữ liệu, DDR là 2 và QDR là 4 khối dữ liệu cùng được truyền đi trong 1 lần giao
+                        tiếp.</p>
+                </li>
+                <li>
+                    <p>CDDR- DDR2 - DDR3 - DDR4 - DDR5 - DDR6: Nếu DDR sẽ chuyền được 2 khối dữ liệu thì với
+                        từng cập bậc được nâng cấp, số lượng khối giữ liệu cũng được gấp đôi. Với chuẩn DDR4
+                        hiện tại là 32 khối dữ liệu trong 1 chu kỳ.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #696969; padding: 15px 15px 15px 15px">
+    <div class="row">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[0]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[1]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[2]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[3]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[4]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[5]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.item-->
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[6]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[7]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[8]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[9]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[10]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a>
+                                <img src="{{ url_for('static', filename='Categories/img/' + index_object[11]) }}"
+                                     alt="Image"
+                                     style="max-width:100%;">
+                            </a>
+                        </div>
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.item-->
+            </div>
+            <!--.carousel-inner-->
+        </div>
+        <!--.Carousel-->
     </div>
 </div>
 {% endblock %}
+{% block imgfooter %}
 
-{% block showcase2 %}
-<section class="showcase">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img"
-                 style="background-image: url({{ url_for('static', filename='img/index_img/ram/ram_section.jpg') }});"></div>
-            <div class="col-lg-6 my-auto showcase-text" style="background-color: #000000">
-                <h2 style="color: #FFFFFF">Ram ECC vs NonECC</h2>
-                <p class="lead mb-0" style="color:#fff">Ram ECC không phổ biến trong thị trường PC cơ bản nhưng vẫn là một phần không thể thiếu trong các hệ thống serve.</p>
-                <p class="lead mb-0" style="color:#fff">So với ram thông thường, ram ECC có khả năng tự động khắc phục và sửa lỗi nếu có sai sót trong dữ liệu.</p>
-                <p class="lead mb-0" style="color: #fff">Ổn định hơn nhưng tốc độ lại được giảm đi để đảm bảo cho hệ thống giao tiếp, dung lượng một thanh ram ECC có thể lên tới 250GB.</p>
-            </div>
-        </div>
-    </div>
-</section>
 {% endblock %}

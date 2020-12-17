@@ -26,11 +26,13 @@
 
 <body>
 <!-- Header -->
-<header style="height: 60px">
+<header style="height: 80px">
     <div class="container">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light justify-content-between bg-dark"
-             style="height: 60px">
-            <a class="navbar-brand" href="/">Navbar</a>
+             style="height: 80px">
+{#            <a class="navbar-brand" href="/">Navbar</a>#}
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='webview/logo.png')}}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,19 +47,19 @@
                         <a class="nav-link" href="/mainboard">MainBoard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="components/ram">RAM</a>
+                        <a class="nav-link" href="/ram">RAM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="components/gpu">GPU</a>
+                        <a class="nav-link" href="/gpu">GPU</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="components/cpu" id="navbarDropdownPortfolio" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="/cpu" id="navbarDropdownPortfolio" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false" style="margin-right: 0px; margin-left: 0px">
                             CPU
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="components/intel">INTEL</a>
-                            <a class="dropdown-item" href="components/amd">AMD</a>
+                            <a class="dropdown-item" href="/intel">INTEL</a>
+                            <a class="dropdown-item" href="/amd">AMD</a>
 
                         </div>
                     </li>
@@ -67,8 +69,8 @@
                             Storage
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="components/ssd">SSD</a>
-                            <a class="dropdown-item" href="components/hdd">HDD</a>
+                            <a class="dropdown-item" href="/ssd">SSD</a>
+                            <a class="dropdown-item" href="/hdd">HDD</a>
 
                         </div>
                     </li>
@@ -78,10 +80,10 @@
                             Other Pages
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                            <a class="dropdown-item" href="components/gear">Gear</a>
-                            <a class="dropdown-item" href="components/case">Case</a>
-                            <a class="dropdown-item" href="components/psu">Psu</a>
-                            <a class="dropdown-item" href="components/cooling">Cooling</a>
+                            <a class="dropdown-item" href="/gear">Gear</a>
+                            <a class="dropdown-item" href="/case">Case</a>
+                            <a class="dropdown-item" href="/psu">Psu</a>
+                            <a class="dropdown-item" href="/cooling">Cooling</a>
 
                         </div>
                     </li>
