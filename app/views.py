@@ -26,3 +26,11 @@ def mainboard():
 def ram():
     index_object = getimg('Ram')
     return render_template('components/Ram.html', index_object=index_object)
+
+
+# @main_blueprint.route('/Vga')
+# def vga():
+#     index_object = getimg('Ram')
+#     return render_template('components/gpu.html', index_object=index_object)
+
+
