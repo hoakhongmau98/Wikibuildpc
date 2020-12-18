@@ -21,6 +21,7 @@
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet" media="screen">
     <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='css/button.css') }}" rel="stylesheet" media="screen" type="text/css">
     {% block links %}{% endblock %}
 </head>
 
@@ -37,17 +38,17 @@
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse flex-right collapse" id="navbarNavDropdown">
+            <div class="navbar-collapse flex-right collapse border border-dark" id="navbarNavDropdown" style="background-color: #343A40; padding: 15px; border-radius: 15px;">
                 <!-- Main Navigation -->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style="font-weight: bold;">
                     <li class="nav-item">
                         <a class="nav-link" href="/build">Build Your PC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/mainboard">MainBoard</a>
+                        <a class="nav-link" href="/Main">MainBoard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ram">RAM</a>
+                        <a class="nav-link" href="/Ram">RAM</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/gpu">GPU</a>

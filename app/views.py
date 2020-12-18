@@ -16,13 +16,13 @@ def build():
     return render_template('build/build.html')
 
 
-@main_blueprint.route('/mainboard')
+@main_blueprint.route('/Main')
 def mainboard():
     index_object = getimg('Main')
-    return render_template('components/mainboard.html', index_object=index_object)
+    return render_template('components/Main.html', index_object=index_object)
 
 
-@main_blueprint.route('/ram')
+@main_blueprint.route('/Ram')
 def ram():
     index_object = getimg('Ram')
-    return render_template('components/ram.html', index_object=index_object)
+    return render_template('components/Ram.html', index_object=index_object)
